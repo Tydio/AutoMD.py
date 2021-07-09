@@ -1,0 +1,47 @@
+import oplsaa.lt
+
+pa-in inherits OPLSAA {
+
+    # atom-id mol-id atom-type charge X Y Z # comments
+   write("Data Atoms") {
+        $atom:a1   $mol:...  @atom:178  0.00  -1.886915  0.000697  9.785368  # O
+        $atom:a2   $mol:...  @atom:177  0.00  -0.662354  0.000484  9.779180  # C
+        $atom:a3   $mol:...  @atom:13   0.00  0.107408  0.000316  11.072511  # C
+        $atom:a4   $mol:...  @atom:13   0.00  -0.792981  0.000424  12.297773  # C
+        $atom:a5   $mol:...  @atom:13   0.00  0.058834  0.000189  13.549062  # C
+        $atom:a6   $mol:...  @atom:13   0.00  -0.837533  0.000257  14.769071  # C
+        $atom:a7   $mol:...  @atom:177  0.00  0.000000  0.000000  16.000149  # C
+        $atom:a8   $mol:...  @atom:178  0.00  1.113896  -0.000473  15.488592  # O
+        $atom:a9   $mol:...  @atom:180  0.00  0.016986  0.000393  8.604560  # N
+        $atom:a10  $mol:...  @atom:910  0.00  -0.679130  0.000539  7.336308  # C
+        $atom:a11  $mol:...  @atom:13   0.00  0.302324  0.000371  6.177687  # C
+        $atom:a12  $mol:...  @atom:13   0.00  -0.461315  0.000455  4.870786  # C
+        $atom:a13  $mol:...  @atom:13   0.00  0.516932  0.000225  3.715527  # C
+        $atom:a14  $mol:...  @atom:13   0.00  -0.246634  0.000257  2.408384  # C
+        $atom:a15  $mol:...  @atom:910  0.00  0.731653  -0.000010  1.253050  # C
+        $atom:a16  $mol:...  @atom:180  0.00  -0.000000  0.000000  0.000000  # N
+        $atom:a17  $mol:...  @atom:183  0.00  1.049287  0.000211  8.622702  # H
+        $atom:a18  $mol:...  @atom:183  0.00  -0.965677  0.000241  0.400790  # H
+    }
+
+    # bond-id atom-id1 atom-id2 # comments
+    write("Data Bond List") {
+        $bond:b0  $atom:a1  $atom:a2  # order:2
+        $bond:b1  $atom:a2  $atom:a3  # order:1
+        $bond:b2  $atom:a3  $atom:a4  # order:1
+        $bond:b3  $atom:a4  $atom:a5  # order:1
+        $bond:b4  $atom:a5  $atom:a6  # order:1
+        $bond:b5  $atom:a6  $atom:a7  # order:1
+        $bond:b6  $atom:a7  $atom:a8  # order:2
+        $bond:b7  $atom:a2  $atom:a9  # order:1
+        $bond:b8  $atom:a10  $atom:a9  # order:1
+        $bond:b9  $atom:a10  $atom:a11  # order:1
+        $bond:b10  $atom:a11  $atom:a12  # order:1
+        $bond:b11  $atom:a12  $atom:a13  # order:1
+        $bond:b12  $atom:a13  $atom:a14  # order:1
+        $bond:b13  $atom:a14  $atom:a15  # order:1
+        $bond:b14  $atom:a15  $atom:a16  # order:1
+        $bond:b15  $atom:a17  $atom:a9  # order:1
+        $bond:b16  $atom:a18  $atom:a16  # order:1
+    }
+}
